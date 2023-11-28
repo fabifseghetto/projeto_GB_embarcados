@@ -18,12 +18,12 @@ activate checkButtons
     end
 
     group serveButtonState
-        activate -> serveButtonState
+        activate serveButtonState
             usuario -> serveButtonState
             serveButtonState -> checkQueues
             checkQueues -> servePatient
             servePatient --> usuario : retorna que paciente esta sendo atendido e o numero do paciente
-        deactivate -> serveButtonState
+        deactivate serveButtonState
     end
 deactivate checkButtons
 
