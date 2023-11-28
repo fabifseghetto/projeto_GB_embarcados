@@ -9,12 +9,12 @@ activate checkButtons
 
     group highPriorityButtonState
         usuario -> highPriorityButtonState
-        highPriorityButtonState --> usuario : returns 0
+        highPriorityButtonState --> checkButtons : returns 0
     end
 
     group normalPriorityButtonState
         usuario -> normalPriorityButtonState
-        normalPriorityButtonState --> usuario : returns 0
+        normalPriorityButtonState --> checkButtons : returns 0
     end
 
     group serveButtonState
