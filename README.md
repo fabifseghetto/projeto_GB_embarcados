@@ -46,7 +46,7 @@ Os materiais escolhidos para o desenvolvimento do projeto foram:
 
 O circuito foi construido com os materiais listados anteriormente. O software foi desenvolvido posterior a montagem do hardware.
 
-![Circuito](./Diagramas/Circuito.png)
+![Circuito](./Diagramas/Circuito.jpeg)
 
 ## Software
 
