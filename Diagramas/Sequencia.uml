@@ -1,0 +1,33 @@
+@startuml diagrama_sequencia_GB
+
+actor usuario
+
+activate initializeFromPatientsQueueFile
+deactivate initializeFromPatientsQueueFile
+
+activate checkButtons
+
+    group highPriorityButtonState
+        usuario -> highPriorityButtonState
+        highPriorityButtonState --> usuario : returns 0
+    end
+
+    group normalPriorityButtonState
+        usuario -> normalPriorityButtonState
+        normalPriorityButtonState --> usuario : returns 0
+    end
+
+    group serveButtonState
+        usuario -> serveButtonState
+        serveButtonState -> checkQueues
+        checkQueues -> servePatient
+        servePatient --> usuario : retorna que paciente esta sendo atendido e o numero do paciente
+    end
+deactivate checkButtons
+
+activate saveCurrentState
+    saveCurrentState --> pacients.txt : salva no arquivo o entado corrente da fila
+deactivate saveCurrentState
+
+
+@enduml diagrama_sequencia_GB
