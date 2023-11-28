@@ -56,9 +56,7 @@ A linguagem escolhida foi c.
 #### Fluxo
 
 ##### Diagrama de Sequência
-![Sequencia](./Diagramas/Sequencia.svg)
-
-Existem 4 tasks, ```ConfigTasks```, ```task1```, ```task2```,```task3``` e ```task4``` que acontecem de maneira simultânea. 
+![Sequencia](./Diagramas/sequencia.svg)
 
 ##### initializeFromPatientsQueueFile()
 A responsabilidade dessa função é verificar se um arquivo chamado "patients.txt" existe.
